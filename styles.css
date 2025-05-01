@@ -7,42 +7,59 @@
 }
 
 :root {
-    /* Color Variables */
+    /* Color */
     --primary-color: #151515;
     --secondary-color: #444444;
     --accent-color: #d5966c;
     --white-color: #ffffff;
-    /* Typography Variables */
+    /* Typography - Heading - XL */
     --font-family-heading-xl: "Big Shoulders", sans-serif;
     --font-weight-heading-xl: 900;
     --font-size-heading-xl: 96px;
     --font-line-height-heading-xl: 88px;
-    /* ### */
+    /* Typography - Heading - L */
     --font-family-heading-l: "Big Shoulders", sans-serif;
     --font-size-heading-l: 70px;
+    /* Typography - Heading - M */
     --font-family-heading-m: "Big Shoulders", sans-serif;
     --font-size-heading-m: 60px;
+    /* Typography - Heading - S */
     --font-family-heading-s: "Big Shoulders", sans-serif;
     --font-size-heading-s: 36px;
+    /* Typography - Body - M */
+    --font-family-body-m: "Outfit", sans-serif;
+    --font-weight-body-m: 300;
+    --font-size-body-m: 22px;
+    --font-line-height-body-m: 32px;
+    /* Typography - Body - S */
+    /* --font-family-body-s: "Outfit", sans-serif;
+    --font-weight-body-s: 300;
+    --font-size-body-s: 18px;
+    --font-line-height-body-s: 28px; */
 }
 
 .cta {
+    display: flex;
+    position: relative;
     height: 800px;
     margin-right: 164px;
 }
 
+/* Black Area */
+
 .black-bg-portion {
+    flex-shrink: 0;
     position: relative;
     height: 800px;
     width: 450px;
     background-color: var(--primary-color);
 }
 
-h1 {
+.heading-negative {
     position: absolute;
     width: 800px;
     margin-top: 200px;
-    margin-left: 185px;
+    margin-left: 190px;
     font-family: var(--font-family-heading-xl);
     font-size: var(--font-size-heading-xl);
     font-weight: var(--font-weight-heading-xl);
@@ -50,4 +67,80 @@ h1 {
     color: var(--white-color);
     text-transform: uppercase;
     letter-spacing: -0.03em; /* Condensed letter spacing */
+}
+
+/* Picture Area */
+
+.picture-bg-portion {
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+    width: 550px;
+    background-image: url("./assets/desktop/image-hero@2x.jpg");
+    background-size: cover; /* Makes image cover the entire area*/
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+}
+
+.heading-positive {
+    position: absolute;
+    width: 800px;
+    margin-top: 200px;
+    margin-left: -262px;
+    font-family: var(--font-family-heading-xl);
+    font-size: var(--font-size-heading-xl);
+    font-weight: var(--font-weight-heading-xl);
+    line-height: var(--font-line-height-heading-xl);
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: -0.03em; /* Condensed letter spacing */
+}
+
+/* Button Area */
+
+.paragraph-btn-portion {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-top: 300px;
+    margin-left: 950px;
+}
+
+.button-header {
+    padding-bottom: 64px;
+}
+
+p,
+.button-header {
+    font-family: var(--font-family-body-m);
+    font-size: var(--font-size-body-m);
+    font-weight: var(--font-weight-body-m);
+    line-height: var(--font-line-height-body-m);
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    width: 260px;
+    height: 72px;
+}
+
+.button-left-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 204px;
+    font-family: "Big Shoulders";
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.button-right-side {
+    width: 56px;
+    background-color: var(--accent-color);
 }
