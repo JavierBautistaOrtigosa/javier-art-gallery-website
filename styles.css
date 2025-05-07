@@ -42,8 +42,9 @@
 .cta {
     display: flex;
     position: relative;
+    justify-content: center;
     height: 800px;
-    margin-right: 164px;
+    /* margin-right: 164px; */
 }
 
 /* Black Area */
@@ -149,22 +150,4 @@ button {
 .button-right-side {
     width: 56px;
     background-color: var(--accent-color);
-}
-
-/* GALLERY BENTO */
-
-.gallery-bento {
-    /* background-color: blue; */
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 200px 200px;
-    gap: 1em;
-    /* grid-template-areas: ; ##### */
-}
-
-.box {
-    background-color: red;
 }
