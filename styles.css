@@ -37,6 +37,7 @@
     --font-size-body-s: 18px;
     --font-line-height-body-s: 28px; */
 }
+/* CTA */
 
 .cta {
     display: flex;
@@ -97,8 +98,6 @@
     letter-spacing: -0.03em; /* Condensed letter spacing */
 }
 
-/* Button Area */
-
 .paragraph-btn-portion {
     position: absolute;
     display: flex;
@@ -123,6 +122,7 @@ p,
 button {
     display: flex;
     flex-direction: row;
+    border: none;
     width: 260px;
     height: 72px;
 }
@@ -141,6 +141,30 @@ button {
 }
 
 .button-right-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-right-side {
     width: 56px;
     background-color: var(--accent-color);
+}
+
+/* GALLERY BENTO */
+
+.gallery-bento {
+    /* background-color: blue; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    gap: 1em;
+    /* grid-template-areas: ; ##### */
+}
+
+.box {
+    background-color: red;
 }
